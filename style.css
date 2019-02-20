@@ -107,6 +107,10 @@ th, td {
   margin-top: 35px;
 }
 
+#contact {
+  padding: 30px;
+}
+
 @media (max-width: 960px) {
   /* For a screen < 960px, this CSS will be read */
   .container {
