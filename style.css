@@ -15,6 +15,23 @@ h1, h2, h3 {
 
 }
 
+.white {
+  color: #EBEBEB;
+}
+
+#page-content {
+  margin-left: 7em;
+}
+
+#sidebar {
+  position: fixed;
+  width: 180px;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  background: #394149;
+}
+
 a {
   color: rgba(0, 0, 0, 0.2);
   text-decoration: none;
@@ -81,21 +98,39 @@ th, td {
   padding: 0px 20px;
 }
 
+.list-sidebar {
+  color: rgba(0, 0, 0, 0.2);
+  list-style-type:none;
+}
+
+.list-sidebar > li {
+  margin-top: 35px;
+}
+
 @media (max-width: 960px) {
   /* For a screen < 960px, this CSS will be read */
   .container {
-    width: 700px;
+    width: 650px;
+  }
+  #sidebar {
+  width: 125px;
   }
 }
 @media (max-width: 720px) {
   /* For a screen < 720px, this CSS will be read */
   .container {
-    width: 500px;
+    width: 350px;
+  }
+  #sidebar {
+  width: 125px;
   }
 }
 @media (max-width: 540px) {
   /* For a screen < 540px, this CSS will be read */
   .container {
-    width: 300px;
+    width: 280px;
+  }
+  #sidebar {
+  width: 120px;
   }
 }
